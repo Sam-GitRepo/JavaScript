@@ -69,7 +69,25 @@ There are two types of operators present in JavaScript-
 
 ---
 ---
+>## `Strings`
 
+Strings can be created as primitives, from string literals, or as objects, using the String() constructor:
+```javascript
+const string1 = "A string primitive";
+const string2 = 'Also a string primitive';
+const string3 = `Yet another string primitive`;
+const string4 = new String("A String object");
+```
+```javaScript
+var name = 'Sam';
+var profession = 'Developer';
+var message = 'Sam is a great guy';
+var temp = `${name} is a 'nice' person "and" he is a ${profession}`;
+```
+$ symbol is used here to pick that particular string from the variable. And if we do, 
+```javaScript
+console.log(temp);
+```
 
 
 
