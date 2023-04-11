@@ -18,3 +18,58 @@ If JavaScripts are used in any websites, then it should not be given any low lev
 * It can also manage the AJAX requests (GET or POST request)
 * JavaScript can get and set cookies and use local storage.
 
+> ### `What Can’t In-Browser JavaScript Do?`
+
+* JavaScript cannot read or write to and from computer hard disk without user permissions. 
+* The browser does not allow the JavaScript of any website to collect the AJAX information of the other website because it generates the error of  same origin policy.
+* To summarize, JavaScript can only access the permitted resources but cannot access your documents on personal computers. 
+  
+These strict policies are developed to make sure that your computer is safe.
+
+> ### `What Makes JavaScript a Unique language?`
+
+* The most important thing that makes it a unique language is, it has a complete integration of HTML and CSS. They provide it with a lot of extra support.
+* Also it provides the use of simple APIs (Application Programming Interface).
+* It also supports the major modern browsers which are enabled by default. If you turn off the feature of JavaScript in the browser, you cannot access any website.
+
+
+***
+***
+
+>## `Variables, Data Types and Operators`
+variables are the data that stores value.
+3 Ways to Declare a JavaScript Variable:
+* Using var
+* Using let
+* Using const
+
+```javaScript
+var a = 78;
+var b = "Sam";
+```
+
+```javaScript
+console.log(a);
+console.log(b);
+```
+### JavaScript has 8 Datatype
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+### Operators
+There are two types of operators present in JavaScript- 
+* Binary Operators - Binary operators work only on 2 operands. For example, x= x+6. Here ‘=’ and ‘+’ are two operands.
+* Unary Operators - Unary Operators work only on 1 operand. For example, 3+4
+
+---
+---
+
+
+
+
