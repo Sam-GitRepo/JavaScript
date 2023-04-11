@@ -39,9 +39,9 @@ These strict policies are developed to make sure that your computer is safe.
 >## `Variables, Data Types and Operators`
 variables are the data that stores value.
 3 Ways to Declare a JavaScript Variable:
-* Using var
-* Using let
-* Using const
+* Using var - var are available throughout the function in which they're declared.
+* Using let - let only available inside the block where they're defined.
+* Using const - const maintain constant values. 
 
 ```javaScript
 var a = 78;
