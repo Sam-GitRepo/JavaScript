@@ -90,4 +90,52 @@ console.log(temp);
 ```
 
 
+### Different Strings Functions
+```javaScript
+<script>
+      var str = "This is a String";
+      console.log(str);
+
+      //First occurrence of a substring
+      var position = str.indexOf("is");
+      console.log(position);
+
+      //Last occurrence of a substring
+      position = str.lastIndexOf("is");
+      console.log(position);
+
+      //Substring from a string
+      var substr = str.slice(1, 6);
+      var substr1 = str.substr(1, 3);
+      console.log(substr);
+      console.log(substr1);
+      
+      //Replace a String
+      var replaced = str.replace('String', 'sam');
+      console.log(replaced);
+
+      //convert the whole string to an uppercase or lowercase letters
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+
+      //Concat any two strings  
+      var newString = str.concat('New String');
+      console.log(newString);
+
+      //Remove all the white spaces in the string  
+      var strWithWhitespace = '     this  contains          whitespaces   ';
+      console.log(strWithWhitespace);
+      console.log(strWithWhitespace.trim());
+
+      //extract any character from a string  
+      var char3 = str.charAt(2);
+      console.log(char3);
+
+      console.log(str[3]);
+      
+    </script>
+```
+
+
+
 
