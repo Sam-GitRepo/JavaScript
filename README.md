@@ -92,7 +92,6 @@ console.log(temp);
 
 ### Different Strings Functions
 ```javaScript
-<script>
       var str = "This is a String";
       console.log(str);
 
@@ -132,8 +131,6 @@ console.log(temp);
       console.log(char3);
 
       console.log(str[3]);
-      
-    </script>
 ```
 
 
