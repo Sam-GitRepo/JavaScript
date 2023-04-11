@@ -1,17 +1,20 @@
 ># `JavaScript`
+* JavaScript is a client side scripting language.
+* It is used to make web pages alive.
+* It is used to programmatically perform actions within the page.
+* When JavaScript was created, it was initially called “LiveScript”.
 
-`console.log("Hello JavaScript");`
+>### `What JavaScript can do?`
 
-Console -> Global Object
+* JavaScript can execute not only in the browser, but also on the server.
+* We will use JavaScript as a client as well as server side language.
+* JavaScript has evolved greatly as a language and is now used to perform a wide variety of tasks. 
 
-Log -> function of Global Object
+>### `What Can In-Browser JavaScript Do?`
 
-Hello JavaScript -> the String to be printed on the console.
+If JavaScripts are used in any websites, then it should not be given any low level CPU permissions like switching off the CPU etc. That is why JavaScript is made with extremely safe permissions that does not have any permission to access low level CPU usage. 
+* JavaScript can add new HTML and change existing HTML from DOM.
+* It can even react to any events (actions).
+* It can also manage the AJAX requests (GET or POST request)
+* JavaScript can get and set cookies and use local storage.
 
->### `Variable and Declaration`
-
-At the time of declaration and definition of a variable we no need to declare the variable the type in JavaScript.
-The same variable which can be assigned with any other types of values.
-No Scoping information is available for variable declaration and definition.
- 
- ># ``
