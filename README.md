@@ -177,19 +177,24 @@ console.log(names.length);
 ```
 #### To sort this array, we can use sort() function
 ```JavaScript
+
 names = names.sort();
+
 ```
 #### we declare a new array as-
+
 ```JavaScript
 let names = new Array(41, 2, 4, "Sam", undefined);
 ```
 ---
 ---
+
 > ## `Functions`
 
 A JavaScript function is a block of code designed to perform a particular task. They are one of the building blocks in JavaScript.
 
 #### The above code with the help of JavaScript functions as follows-
+
 ```JavaScript
 function greet(name){
           console.log(name + " is a good guy");
@@ -212,25 +217,33 @@ function sum(a,b,c){
 let returnVal = sum(1,2,3);
 console.log(returnVal)
 ```
+
 ---
 ---
+
 > ## `Interaction`
 
 The webpage more interactive and decide how the user will interact with the page. These things will be done by Alert, Prompt, and Confirm.
 
 #### alret()
- The alert() method displays an alert box with a specified message and an OK button. It is often used to make sure information comes through to the user. The alert box takes the focus away from the current window and forces the browser and forces the browser to read the message
- ```JavaScript
+
+The alert() method displays an alert box with a specified message and an OK button. It is often used to make sure information comes through to the user. The alert box takes the focus away from the current window and forces the browser and forces the browser to read the message
+
+```JavaScript
 alert("This is a message");
 ```
 ####  prompt()
+
 The prompt() method displays a dialog box that prompts the visitor for input. A prompt box is often used if you want to input a value before entering a page. When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value. The prompt() method returns the input value if the user clicks "OK". If the user clicks "cancel" the method returns null.
 ```JavaScript
 let name = prompt("What is your name?", "Guest");
 console.log(name);
 ```
+
 #### confirm()
+
 The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button. A confirm box is often used if you want the user to verify or accept something. The confirm box takes the focus away from the current window and forces the browser to read the message.  The confirm() method returns true if the user clicked "OK", and false otherwise. This method is only used if we want to double-check any task performed by the user.
+
 ```JavaScript
       let deletePost = confirm("Do you really want to delete this post?");  
       // console.log(deletePost);
@@ -241,8 +254,10 @@ The confirm() method displays a dialog box with a specified message, along with 
             console.log("Your post has not been deleted");
       }
 ```
+
 --- 
 ---
+
 > ## `Lopps`
 
 #### 3 ways to write  for loop in JS
@@ -255,11 +270,13 @@ let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja", "SkillF"];
       console.log("Hello friend, " + friends[index]);
      }
 ```
+
 ```JavaScript
 friends.forEach(function f(element){
    console.log("Hello Friend, " + element + " to modern JavaScript");
      });
 ```
+
 ```JavaScript
 for (element of friends){
       console.log("Hello Friend, " + element + " to modern JavaScript again");
@@ -296,8 +313,59 @@ let j =34;
 ```
 ---
 ---
+>## `DOM (Document Object Model)`
+When a web page is loaded, the browser creates a Document Object Model of the page.
+The HTML DOM model is constructed as a tree of Objects:
+![logo](https://www.w3schools.com/js/pic_htmltree.gif)
+
+The HTML DOM (Document Object Model) is a standard object model and programming interface for HTML. It defines:
+
+* The HTML elements as objects
+* The properties of all HTML elements
+* The methods to access all HTML elements
+* The events for all HTML elements
 
 
+```JavaScript
+ <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+```
+The most common way to access an HTML element is to use the id of the element **getElementById()**
+
+```JavaScript
+let main = document.getElementById('main');
+console.log(main);
+```
+Find all the elements with same class name, use **getElementsByClassName()**
+
+```JavaScript
+let containers = document.getElementsByClassName('container');
+console.log(containers);
+```
+Find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the **querySelector()**
+```JavaScript
+let sel = document.querySelector('container');
+console.log("Selector returns ", sel);
+```
+use **querySelectorAll()** to target the elements
+```JavaScript
+let sel = document.querySelectorAll('#nav');
+console.log("Selector returns ", sel);
+```
+
+```JavaScript
+
+```
+```JavaScript
+
+```
 ```JavaScript
 
 ```
