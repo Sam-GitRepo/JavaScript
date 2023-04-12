@@ -235,16 +235,72 @@ The confirm() method displays a dialog box with a specified message, along with 
       let deletePost = confirm("Do you really want to delete this post?");  
       // console.log(deletePost);
       if(deletePost){
-      // Code to delete the post
-      console.log("Your post has been deleted successfully");
+            console.log("Your post has been deleted successfully");
       }
       else{
-      // Code to cancel deletion of the post
-      console.log("Your post has not been deleted");
+            console.log("Your post has not been deleted");
       }
 ```
+--- 
+---
+> ## `Lopps`
+
+#### 3 ways to write  for loop in JS
 
 
+```JavaScript
+let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja", "SkillF"];
+
+     for (let index = 0; index < friends.length; index++) {
+      console.log("Hello friend, " + friends[index]);
+     }
+```
+```JavaScript
+friends.forEach(function f(element){
+   console.log("Hello Friend, " + element + " to modern JavaScript");
+     });
+```
+```JavaScript
+for (element of friends){
+      console.log("Hello Friend, " + element + " to modern JavaScript again");
+     }
+```
+#### To iterate through an object, we can use for/in loops.
+```JavaScript
+let employee = {
+      name: "Sam",
+      salary: 200000000,
+      age: 24
+    }
+
+    for(key in employee){
+      console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+```
+There are 2 More types of loop
+* while
+* Do-while
+```JavaScript
+let i =0;
+    while(i<4){
+      console.log(`${i} is less than 4`);
+      i++;
+    }
+```
+```JavaScript
+let j =34;
+    do{
+      console.log(`${j} is do-while loop`);
+      j++;
+    }while(j<4);
+```
+---
+---
+
+
+```JavaScript
+
+```
 ```JavaScript
 
 ```
