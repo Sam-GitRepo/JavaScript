@@ -183,4 +183,42 @@ names = names.sort();
 ```JavaScript
 let names = new Array(41, 2, 4, "Sam", undefined);
 ```
+---
+---
+> ## `Functions`
 
+A JavaScript function is a block of code designed to perform a particular task. They are one of the building blocks in JavaScript.
+
+#### The above code with the help of JavaScript functions as follows-
+```JavaScript
+function greet(name){
+          console.log(name + " is a good guy");
+}
+let name = "Sam";
+let name1 = "Sharma";
+let name2 = "Jha";
+greet(name);
+greet(name1);
+greet(name2);
+```
+
+#### Return Something
+
+```JavaScript
+function sum(a,b,c){
+    let d = a + b + c;
+    return d;
+}
+let returnVal = sum(1,2,3);
+console.log(returnVal)
+```
+---
+---
+
+
+
+
+
+```JavaScript
+
+```
