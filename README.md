@@ -150,12 +150,12 @@ The object class represents one of JavaScript’s data types. It is used to stor
 #### Apart from primitive data types, all the other are objects
 ```JavaScript
 let employee = {
-             name: "Sam",
-             salary: 100000,
-             age: 24,
-            "name 2": 'Hritik'
-         }
-         console.log(employee);
+      name: "Sam",
+      salary: 100000,
+      age: 24,
+      "name 2": 'Hritik'
+      }
+      console.log(employee);
 ```
 
 #### Declare an array as follows-
@@ -214,9 +214,35 @@ console.log(returnVal)
 ```
 ---
 ---
+> ## `Interaction`
 
+The webpage more interactive and decide how the user will interact with the page. These things will be done by Alert, Prompt, and Confirm.
 
-
+#### alret()
+ The alert() method displays an alert box with a specified message and an OK button. It is often used to make sure information comes through to the user. The alert box takes the focus away from the current window and forces the browser and forces the browser to read the message
+ ```JavaScript
+alert("This is a message");
+```
+####  prompt()
+The prompt() method displays a dialog box that prompts the visitor for input. A prompt box is often used if you want to input a value before entering a page. When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value. The prompt() method returns the input value if the user clicks "OK". If the user clicks "cancel" the method returns null.
+```JavaScript
+let name = prompt("What is your name?", "Guest");
+console.log(name);
+```
+#### confirm()
+The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button. A confirm box is often used if you want the user to verify or accept something. The confirm box takes the focus away from the current window and forces the browser to read the message.  The confirm() method returns true if the user clicked "OK", and false otherwise. This method is only used if we want to double-check any task performed by the user.
+```JavaScript
+      let deletePost = confirm("Do you really want to delete this post?");  
+      // console.log(deletePost);
+      if(deletePost){
+      // Code to delete the post
+      console.log("Your post has been deleted successfully");
+      }
+      else{
+      // Code to cancel deletion of the post
+      console.log("Your post has not been deleted");
+      }
+```
 
 
 ```JavaScript
