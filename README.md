@@ -132,7 +132,55 @@ console.log(temp);
 
       console.log(str[3]);
 ```
+---
+---
+> ## `Arrays & Objects`
 
+The object class represents one of JavaScript’s data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor. we have two types of values used in JavaScript- primitive and reference.
 
+#### Primitive Types
+```JavaScript
+      let myVar = 34;
+      let myVar2 = "string";
+      let myVar3 = true;
+      let myVar4 = null;
+      let myVar5 = undefined;
+```
 
+#### Apart from primitive data types, all the other are objects
+```JavaScript
+let employee = {
+             name: "Sam",
+             salary: 100000,
+             age: 24,
+            "name 2": 'Hritik'
+         }
+         console.log(employee);
+```
+
+#### Declare an array as follows-
+```JavaScript
+let names = [1, 2, 4, "Sam", undefined];
+console.log(names);
+```
+#### To print the value present at any index number
+```JavaScript
+console.log(names[1])
+```
+#### We can also create arrays with the help of a new keyword 
+```JavaScript
+let names = new Array(23);
+```
+#### To know the length of an array
+```JavaScript
+console.log(names.length);
+```
+#### To sort this array, we can use sort() function
+```JavaScript
+names = names.sort();
+```
+#### we declare a new array as-
+```JavaScript
+let names = new Array(41, 2, 4, "Sam", undefined);
+```
 
