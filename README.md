@@ -350,15 +350,66 @@ let containers = document.getElementsByClassName('container');
 console.log(containers);
 ```
 Find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the **querySelector()**
+
 ```JavaScript
 let sel = document.querySelector('container');
 console.log("Selector returns ", sel);
 ```
 use **querySelectorAll()** to target the elements
+
 ```JavaScript
 let sel = document.querySelectorAll('#nav');
 console.log("Selector returns ", sel);
 ```
+---
+---
+
+> ## `Events & Listening to Events`
+
+
+HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+Here is a list of some common HTML events-
+
+* Onchange-  An HTML element has been changed
+* Onclick- The user clicks an HTML element
+* Onmouseover-   The user moves the mouse over an HTML element
+* Onmouseout-The user moves the mouse away from an HTML element
+* Onkeydown- The user pushes a keyboard key
+* Onload- The browser has finished loading the page
+
+
+If we want that while clicking the button the paragraph should hide and by again clicking, it should come back, then we can write as follows-
+
+```JavaScript
+<button id="btn" onclick="toggleHide()">Show/Hide</button>
+function toggleHide(){
+      let btn = document.getElementById('btn');
+      let para = document.getElementById('para'); 
+      if(para.style.display != 'none'){
+      para.style.display = 'none';
+      }
+      else{
+      para.style.display = 'block';
+      }
+    }
+```
+If we want to alert when the mouse pointer is on the paragraph
+
+```JavaScript
+let para = document.getElementById('para');
+      para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside')
+      });
+```
+If we want to alert when the pointer is outside the paragraph,
+
+```JavaScript
+para.addEventListener('mouseout', function run(){
+            alert('Mouse now went outside')
+      });
+```
+
 
 ```JavaScript
 
