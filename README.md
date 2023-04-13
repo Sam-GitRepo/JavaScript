@@ -282,7 +282,7 @@ for (element of friends){
       console.log("Hello Friend, " + element + " to modern JavaScript again");
      }
 ```
-#### To iterate through an object, we can use for/in loops.
+* To iterate through an object, we can use for/in loops.
 ```JavaScript
 let employee = {
       name: "Sam",
@@ -337,25 +337,25 @@ The HTML DOM (Document Object Model) is a standard object model and programming 
         </ul>
     </div>
 ```
-The most common way to access an HTML element is to use the id of the element **getElementById()**
+* The most common way to access an HTML element is to use the id of the element **getElementById()**
 
 ```JavaScript
 let main = document.getElementById('main');
 console.log(main);
 ```
-Find all the elements with same class name, use **getElementsByClassName()**
+* Find all the elements with same class name, use **getElementsByClassName()**
 
 ```JavaScript
 let containers = document.getElementsByClassName('container');
 console.log(containers);
 ```
-Find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the **querySelector()**
+* Find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the **querySelector()**
 
 ```JavaScript
 let sel = document.querySelector('container');
 console.log("Selector returns ", sel);
 ```
-use **querySelectorAll()** to target the elements
+* use **querySelectorAll()** to target the elements
 
 ```JavaScript
 let sel = document.querySelectorAll('#nav');
@@ -394,7 +394,7 @@ function toggleHide(){
       }
     }
 ```
-If we want to alert when the mouse pointer is on the paragraph
+* If we want to alert when the mouse pointer is on the paragraph
 
 ```JavaScript
 let para = document.getElementById('para');
@@ -402,14 +402,62 @@ let para = document.getElementById('para');
             alert('Mouse Inside')
       });
 ```
-If we want to alert when the pointer is outside the paragraph,
+* If we want to alert when the pointer is outside the paragraph,
 
 ```JavaScript
 para.addEventListener('mouseout', function run(){
             alert('Mouse now went outside')
       });
 ```
+---
+---
+> ## `setInterval & setTimeOut`
 
+The window object allows execution of code at specified time intervals. These time intervals are called timing events.
+
+
+* Executes a function, after waiting a specified number of milliseconds.
+
+```JavaScript
+setTimeout(function, milliseconds)
+```
+* Same as **setTimeout()**, but repeats the execution of the function continuously.
+  
+```JavaScript
+setInterval(function, milliseconds)
+```
+* The **setTimeout()** method calls a function or evaluates an expression after a specified number of milliseconds. This function is only executed once. Use the **clearTime()** method to prevent the function running.
+```JavaScript
+function greet(){
+        console.log("Hello Good Morning ");
+    }
+setTimeout(greet, 5000);
+```
+* To clear the timeout, we can use the function **clearTimeout()**
+```JavaScript
+console.log(timeOut);
+```
+* The setInterval function is used. It calls a function or evaluates an expression at specified intervals in milliseconds. It will continue calling the function until **clearInterval()** function is called or the window is closed
+  
+```JavaScript
+setInterval(greet, 1000, "Harry", "Good Night");
+```
+* To stop this, we have to use **clearInterval()** as
+```JavaScript
+clearInterval(intervalId);
+```
+Another example
+```JavaScript
+function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,  1000);
+```
+```JavaScript
+
+```
 
 ```JavaScript
 
@@ -417,6 +465,7 @@ para.addEventListener('mouseout', function run(){
 ```JavaScript
 
 ```
+
 ```JavaScript
 
 ```
