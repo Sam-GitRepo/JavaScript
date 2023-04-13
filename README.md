@@ -455,6 +455,52 @@ function displayTime(){
     }
     setInterval(displayTime,  1000);
 ```
+---
+---
+> ## `Date & Time`
+
+* Date objects are created with the **new Date()** constructor.
+```JavaScript
+let now = new Date();
+console.log(now);
+```
+* To initialize the date of any given time
+  
+```JavaScript
+let newDate = new Date("2029-09-30");
+console.log(newDate)
+```
+* However, there is another way to initialize the date.
+```JavaScript
+// let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+      let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+      console.log(newDate);
+```
+* We can also set date and time manually with the functions like **setDate()** and **setMinutes**
+* 
+```JavaScript
+newDate.setDate(8);
+newDate.setMinutes(29);
+console.log(newDate)
+```
+* Through this constructor, we can initialize the date in the given format.
+```JavaScript
+let yr = newDate.getFullYear();
+console.log("The year is ", yr);
+
+let dat = newDate.getDate();
+console.log("The date is ", dat);
+
+let month = newDate.getMonth();
+console.log("The month is ", month);
+
+let hours = newDate.getHours();
+console.log("The hours is ", hours);
+```
+
+```JavaScript
+
+```
 ```JavaScript
 
 ```
