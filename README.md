@@ -497,21 +497,81 @@ console.log("The month is ", month);
 let hours = newDate.getHours();
 console.log("The hours is ", hours);
 ```
+---
+---
+> ## `Arrow Functions`
 
+An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to this, arguments, super or new.target keywords. Arrow function expressions are ill-suited as methods, and they cannot be used as constructors.
+
+```JavaScript
+//Basic Function
+function greet() {
+      console.log('Good morning');
+    }
+
+    greet();
+
+// Arrow function
+let greet =  ()=> {
+      console.log('Good morning');
+     }
+```
+* We will get the same output as the above after executing this code. This function can also be used with the **setTimeout()** function 
+  
+```JavaScript
+setTimeout(() => {
+      console.log("We are inside setTimeout");
+    }, 3000);
+```
+* Simply add the two numbers with the arrow functions 
+  
+```JavaScript
+let sum2 = (a , b) => a + b;
+```
+* Any single variable in our code, then we don’t need to put any braces also
+```JavaScript
+let half = a => a/2;
+```
+* The use of lexical Function
+```JavaScript
+let obj1={
+        names:["sam", "sharma", "Jha","verma", "raja","rajjo"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log("Kukdoo Koo " + student);
+            });
+        }
+    }
+    obj1.speak();
+```
+* Made a speak function, add a forEach() loop to it, and then added an arrow function. But if we add a variable greeting and add this.greeting inside the console.log 
+  
+```JavaScript
+let obj1={
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log(this.greeting + " Kukdoo Koo " + student);
+            });
+        }
+    }
+    obj1.speak();
+```
+---
+---
 ```JavaScript
 
 ```
 ```JavaScript
 
 ```
-
 ```JavaScript
 
 ```
 ```JavaScript
 
 ```
-
 ```JavaScript
 
 ```
