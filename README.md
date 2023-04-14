@@ -561,22 +561,40 @@ let obj1={
 ---
 ---
 
-> ## `h`
-```JavaScript
+> ## `JSON( JavaScript Object Notation)`
 
-```
-```JavaScript
+* JSON is a lightweight data-interchange format
+* JSON is language independent
+* JSON is "self-describing" and easy to understand
 
-```
-```JavaScript
+The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. The code for reading and generating JSON data can be written in any programming language.
 
-```
+* Initialize the JSON object
 ```JavaScript
-
+let jsonObj = {
+        name: "Sam",
+        age: "24",
+        friend: "Satya",
+        food: "Maggi"
+        } 
+        console.log(jsonObj)
 ```
+* The stringify function is used to convert a valid JavaScript object into a string.
+  
 ```JavaScript
-
+let myJsonStr = JSON.stringify(jsonObj);
+console.log(myJsonStr);
 ```
+* Replace any item in JSON
+  
 ```JavaScript
-
+myJsonStr = myJsonStr.replace('Harry', 'Larry');
+console.log(myJsonStr)
 ```
+* convert this string again into an object
+```JavaScript
+newJsonObj = JSON.parse(myJsonStr);
+console.log(newJsonObj
+```
+---
+---
