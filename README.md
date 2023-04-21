@@ -69,6 +69,26 @@ There are two types of operators present in JavaScript-
 
 ---
 ---
+
+>## `Hoisting`
+
+Hoisting is a process in js where declaration is carry forwarded or move on top with respect to there scope.
+
+- Hoisting is internally used in js such that each scope have an idea of there variables.
+
+- In case of Hoisting only declaration is moved on top in the scope
+# Diff between Let Var And Const
+
+| let                                                                                                                            | var                                                           | const                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| We can declare without init                                                                                                    | We can declare without init                                   | 'const' declarations must be initialized.                                                                     |
+| We can change the init value                                                                                                   | We can change the init value                                  | We can not change the init value                                                                              |
+| Scope of let is block Scope                                                                                                    | Scope of var is function level                                | Scope of let is block Scope                                                                                   |
+| In Case of Let Hoisting Happens but internally js does not allow us to use a variable declared with let without initialization | We can init variable before declaration and it will work fine | case of const is same as let and in case of const we do not have the privilege to declare and init separately |
+
+
+---
+---
 >## `Strings`
 
 Strings can be created as primitives, from string literals, or as objects, using the String() constructor:
@@ -216,6 +236,22 @@ function sum(a,b,c){
 }
 let returnVal = sum(1,2,3);
 console.log(returnVal)
+```
+
+#### Callback Function
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+```JavaScript
+function greeting(name) {
+  alert(`Hello, ${name}`);
+}
+
+function processUserInput(callback) {
+  const name = prompt("Please enter your name.");
+  callback(name);
+}
+
+processUserInput(greeting);
+
 ```
 
 ---
